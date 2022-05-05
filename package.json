@@ -1,0 +1,25 @@
+{
+  "name": "master-demo",
+  "version": "1.0.0",
+  "description": "Some description!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falaouie/demo-repo.git"
+  },
+  "author": "Fadi Alaouie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falaouie/demo-repo/issues"
+  },
+  "homepage": "https://github.com/falaouie/demo-repo#readme",
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "nodemon": "^2.0.16"
+  }
+}
