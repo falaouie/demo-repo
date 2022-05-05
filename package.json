@@ -23,7 +23,7 @@
     "nodemon": "^2.0.16"
   },
   "build": {
-    "appid": "com.alawiyeh.devsilver",
+    "appId": "com.alawiyeh.devsilver",
     "copyright": "alawiyeh silver systems",
     "mac" : {
       "category": "public.app-category.business",
