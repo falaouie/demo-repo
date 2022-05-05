@@ -30,7 +30,7 @@ function createWindow () {
   mainWindow.on('closed',  () => {
     mainWindow = null
   })
-  // mafi shi bas kirmel el commit el jdeed
+  // kirmel el commit el jdeed
   mainWindow.maximize()
   mainWindow.show()
 }
