@@ -6,8 +6,7 @@
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
-    "reset": "git reset --hard",
-    "build": "electron-builder --help"
+    "reset": "git reset --hard"
   },
   "repository": {
     "type": "git",
@@ -22,5 +21,16 @@
   "devDependencies": {
     "electron": "^18.2.0",
     "nodemon": "^2.0.16"
+  },
+  "build": {
+    "appid": "com.alawiyeh.devsilver",
+    "copyright": "alawiyeh silver systems",
+    "mac" : {
+      "category": "public.app-category.business",
+      "target": "dmg"
+    },
+    "win" : {
+      "target": "zip"
+    }
   }
 }
