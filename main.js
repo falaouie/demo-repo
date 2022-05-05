@@ -9,7 +9,8 @@ let mainWindow
 function createWindow () {
 
   mainWindow = new BrowserWindow({
-    width: 1000, height: 800,
+  //  width: 1000, height: 800,
+    show: false,
     webPreferences: {
       // --- !! IMPORTANT !! ---
       // Disable 'contextIsolation' to allow 'nodeIntegration'
@@ -29,6 +30,9 @@ function createWindow () {
   mainWindow.on('closed',  () => {
     mainWindow = null
   })
+
+  mainWindow.maximize()
+  mainWindow.show()
 }
 
 // Electron `app` is ready
