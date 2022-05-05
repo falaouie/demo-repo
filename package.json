@@ -1,23 +1,24 @@
 {
-  "name": "master-demo",
+  "name": "Silver System",
   "version": "1.0.0",
-  "description": "Some description!",
+  "description": "Silver System Dev for now",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
-    "reset": "git reset --hard"
+    "reset": "git reset --hard",
+    "build": "electron-builder --help"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falaouie/demo-repo.git"
+    "url": "git+https://github.com/falaouie/master-electron.git"
   },
   "author": "Fadi Alaouie",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/falaouie/demo-repo/issues"
+    "url": "https://github.com/falaouie/master-electron/issues"
   },
-  "homepage": "https://github.com/falaouie/demo-repo#readme",
+  "homepage": "https://github.com/falaouie/master-electron#readme",
   "devDependencies": {
     "electron": "^18.2.0",
     "nodemon": "^2.0.16"
