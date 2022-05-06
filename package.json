@@ -8,18 +8,12 @@
     "watch": "nodemon --exec electron .",
     "reset": "git reset --hard",
     "win-cert": "electron-builder create-self-signed-cert -p alawiyehcom",
-    "release": "electron-builder -w -p 'onTagOrDraft'"
+    "release": "electron-builder -w -p onTagOrDraft"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/falaouie/master-electron.git"
-  },
+  "repository": "https://github.com/falaouie/master-electron",
+  "homepage": "https://github.com/falaouie/master-electron",
   "author": "Fadi Alaouie",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/falaouie/master-electron/issues"
-  },
-  "homepage": "https://github.com/falaouie/master-electron#readme",
   "devDependencies": {
     "electron": "^18.2.0",
     "nodemon": "^2.0.16"
@@ -28,7 +22,9 @@
     "appId": "com.alawiyeh.devsilver",
     "copyright": "alawiyeh silver systems",
     "publish": {
-      "provider": "github"
+      "provider": "github",
+      "owner": "falaouie",
+      "repo": "master_electron"
     },
     "mac": {
       "category": "public.app-category.business",
