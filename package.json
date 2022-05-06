@@ -7,7 +7,8 @@
     "start": "electron .",
     "watch": "nodemon --exec electron .",
     "reset": "git reset --hard",
-    "win-cert": "electron-builder create-self-signed-cert -p alawiyehcom"
+    "win-cert": "electron-builder create-self-signed-cert -p alawiyehcom",
+    "release": "electron-builder -w -p onTagOrDraft"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
   "build": {
     "appId": "com.alawiyeh.devsilver",
     "copyright": "alawiyeh silver systems",
+    "publish": {
+      "provider": "github"
+    },
     "mac" : {
       "category": "public.app-category.business",
       "target": "dmg"
