@@ -1,5 +1,5 @@
 {
-  "name": "Silver System",
+  "name": "silversystem",
   "version": "1.0.0",
   "description": "Silver System Dev for now",
   "main": "main.js",
@@ -30,7 +30,10 @@
       "target": "dmg"
     },
     "win" : {
-      "target": "zip"
+      "target": "zip",
+      "certificateFile": "private/certificate.p12",
+      "certificatePassword": "",
+      "verifyUpdateCodeSignature": false
     }
   }
 }
