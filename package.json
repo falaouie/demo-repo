@@ -8,7 +8,7 @@
     "watch": "nodemon --exec electron .",
     "reset": "git reset --hard",
     "win-cert": "electron-builder create-self-signed-cert -p alawiyehcom",
-    "release": "electron-builder -w -p onTagOrDraft"
+    "release": "electron-builder -w -p 'onTagOrDraft'"
   },
   "repository": {
     "type": "git",
@@ -30,11 +30,11 @@
     "publish": {
       "provider": "github"
     },
-    "mac" : {
+    "mac": {
       "category": "public.app-category.business",
       "target": "dmg"
     },
-    "win" : {
+    "win": {
       "certificateFile": "private/alawiyehcom.pfx",
       "certificatePassword": "",
       "verifyUpdateCodeSignature": false,
