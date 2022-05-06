@@ -25,11 +25,11 @@
   "build": {
     "appId": "com.alawiyeh.devsilver",
     "copyright": "alawiyeh silver systems",
-    "mac" : {
+    "mac": {
       "category": "public.app-category.business",
       "target": "dmg"
     },
-    "win" : {
+    "win": {
       "target": "zip",
       "certificateFile": "private/certificate.p12",
       "certificatePassword": "",
