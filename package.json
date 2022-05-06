@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec electron .",
-    "reset": "git reset --hard"
+    "reset": "git reset --hard",
+    "win-cert": "electron-builder create-self-signed-cert -p alawiyehcom"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,10 @@
       "target": "dmg"
     },
     "win" : {
-      "target": "zip",
-      "certificateFile": "private/certificate.p12",
+      "certificateFile": "private/alawiyehcom.pfx",
       "certificatePassword": "",
-      "verifyUpdateCodeSignature": false
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "alawiyehcom"
     }
   }
 }
