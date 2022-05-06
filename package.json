@@ -1,7 +1,7 @@
 {
   "name": "silversystem",
   "version": "1.0.0",
-  "description": "Silver System Dev for now",
+  "description": "Silver System Development",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
