@@ -1,5 +1,6 @@
 // Modules
 const {app, BrowserWindow} = require('electron')
+const updater = require('./updater')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -7,6 +8,9 @@ let mainWindow
 
 // Create a new BrowserWindow when `app` is ready
 function createWindow () {
+  // check for updates after 3 seconds
+
+  setTimeout(updater, 3000)
 
   mainWindow = new BrowserWindow({
   //  width: 1000, height: 800,
