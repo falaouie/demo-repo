@@ -1,6 +1,7 @@
 const { dialog } = require('electron')
 const { autoUpdater } = require('electron-updater')
 
+
 // configure log debugging
  autoUpdater.logger = require('electron-log')
  autoUpdater.logger.transports.file.level = 'info'
